@@ -26,10 +26,3 @@ class HelloController {
 	}
 
 }
-
-@Entity
-class Greeting {
-	@Id
-	@GeneratedValue
-	private Long id;
-}
