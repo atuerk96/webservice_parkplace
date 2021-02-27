@@ -7,7 +7,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class WebserviceParkplaceApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(WebserviceParkplaceApplication.class, args);
+		System.out.println("Hallo");
+		//SpringApplication.run(WebserviceParkplaceApplication.class, args);
 	}
 
 }
