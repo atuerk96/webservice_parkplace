@@ -18,7 +18,7 @@ public class WebserviceParkplaceApplication {
 }
 
 @RestController
-class HelloWebService {
+class HelloController {
 	@GetMapping("/")
 	String hello() {
 		return "Hallo Digga";
