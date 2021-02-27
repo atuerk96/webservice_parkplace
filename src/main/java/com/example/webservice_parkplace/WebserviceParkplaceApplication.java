@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class WebserviceParkplaceApplication {
 
 	public static void main(String[] args) {
-		//SpringApplication.run(WebserviceParkplaceApplication.class, args);
+		SpringApplication.run(WebserviceParkplaceApplication.class, args);
 		System.out.println("Hi");
 		//SpringApplication.run(WebserviceParkplaceApplication.class, args);
 	}
