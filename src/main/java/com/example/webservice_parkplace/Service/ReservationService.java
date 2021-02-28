@@ -1,7 +1,7 @@
-package Controller;
+package com.example.webservice_parkplace.Service;
 
-import Services.ReservationRepository;
 import com.example.webservice_parkplace.Entitys.Reservation;
+import com.example.webservice_parkplace.Service.ReservationRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.List;

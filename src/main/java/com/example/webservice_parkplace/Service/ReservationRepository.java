@@ -1,4 +1,4 @@
-package Services;
+package com.example.webservice_parkplace.Service;
 
 import com.example.webservice_parkplace.Entitys.Reservation;
 import org.springframework.data.jpa.repository.JpaRepository;

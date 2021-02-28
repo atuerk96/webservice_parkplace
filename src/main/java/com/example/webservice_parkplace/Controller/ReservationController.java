@@ -1,13 +1,11 @@
-package Controller;
+package com.example.webservice_parkplace.Controller;
 
-import Services.ReservationRepository;
 import com.example.webservice_parkplace.Entitys.Reservation;
+import com.example.webservice_parkplace.Service.ReservationService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.view.RedirectView;
 
-import java.awt.*;
 import java.util.List;
 import java.util.Map;
 
