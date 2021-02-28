@@ -1,0 +1,1 @@
+web: java -jar target/webservice_parkplace.jar
