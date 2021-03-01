@@ -1,14 +1,14 @@
 package com.example.webservice_parkplace.Service;
 
 import com.example.webservice_parkplace.Entitys.Reservation;
-import com.example.webservice_parkplace.Service.ReservationRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.servlet.view.RedirectView;
 
 import java.util.List;
 
 public class ReservationService {
 
-    private static ReservationRepository reservationsRepository;
+    private ReservationRepository reservationsRepository;
 
     @Autowired
     public ReservationService(ReservationRepository reservationsRepository){
@@ -22,15 +22,17 @@ public class ReservationService {
         return reservationsRepository.findAllById(reservationsId);
     }
 
-    public static void saveReservation(Reservation reservation)
+    public Reservation saveReservation(Reservation reservation)
     {
         reservationsRepository.save(reservation);
+        return reservation;
     }
 
 
-    public void deleteReservation(int reservationId)
+    public RedirectView deleteReservation(int reservationId)
     {
         reservationsRepository.deleteById(reservationId);
+        return null;
     }
 
 
